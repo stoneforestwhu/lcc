@@ -1,0 +1,14 @@
+# cmake minimum version required
+cmake_minimum_required (VERSION 2.8)
+# project information
+
+project(LLC)
+
+include_directories(x86/win32)
+
+set(BLBURG_SOURCES
+    lburg/lburg.c
+	lburg/gram.c
+   )
+
+add_executable(lburg ${BLBURG_SOURCES})
