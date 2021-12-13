@@ -47,8 +47,11 @@ set(BRCC_SOURCES
     backend/sparc.c
     backend/x86.c
     backend/x86linux.c)
-
 add_executable(rcc ${BRCC_SOURCES})
+
+set(TEST_MAIN_SOURCES
+    src/test_main.c)
+add_executable(test_main ${TEST_MAIN_SOURCES})
 
 
 set(BPRINT_SOURCES
